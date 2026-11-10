@@ -48,10 +48,10 @@
 		]);
 		// Mapa base OpenStreetMap (sin API Key)
 		var osm = L.tileLayer(
-			'https://basemaps.cartocdn.com/rastertiles/light_all/{z}/{x}/{y}.png?key=TU_API_KEY',
+			'https://tile.openstreetmap.org/{z}/{x}/{y}.png',
 			{
-				attribution: '&copy; OpenStreetMap contributors &copy; CARTO',
-				maxZoom: 20
+				attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>',
+				maxZoom: 19
 			}
 		).addTo(map);
 
